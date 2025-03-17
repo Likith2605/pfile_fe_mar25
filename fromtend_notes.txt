@@ -1,0 +1,15 @@
+bootstrap js and react js
+Day1 Monday 17-March-2025
+
+
+commands to update the remote repo w.r.t. local repo 
+$ git add .
+
+In the above command the git will mark(stage) allth files that need to be updated in the remote w.r.t. local repo.
+
+$ git commit -m "relevent message"
+In the above command the git creates a secured object consisting of all the staged files and necessary information.
+
+$ git push origin admin
+
+$ git push origin main
