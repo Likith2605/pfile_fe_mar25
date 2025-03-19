@@ -1,0 +1,35 @@
+numeric_vector<-seq(from=1,to=10,by=2)
+length_vector<-length(numeric_vector)
+sum_vector<-sum(numeric_vector)
+cat("numeric vector:",numeric_vector,"\n")
+cat("function1-length of vector:",length_vector,"\n")
+cat("function2-sum of vector:",sum_vector,"\n")
+
+matrix_data<-matrix(1:9,nrow=3,ncol=3)
+cat("matrix:\n")
+print(matrix_data)
+cat("dimension of matrix:",dim(matrix_data),"\n")
+cat("transpose of matrix:",t(matrix_data))
+cat("diagonal element of matrix:",diag(x=matrix_data))
+
+sample_list<-list(matrix_data,numeric_vector,c("apple","banana","cherry"))
+names(sample_list)<-c("mat","numvect","fruits")
+cat("sample_list:\n")
+print(sample_list)
+cat("length of list is:",length(sample_list))
+cat("names of lits elements:",names(sample_list),"\n")
+cat("accesing on element of list(fruits):",sample_list$fruits,"\n\n")
+
+df<-data.frame(
+Name=c("manu","navi","rak"),
+Age=c(18,33,24),
+Vote=c(TRUE,FALSE,TRUE)
+)
+cat("data Frame\n")
+print(df)
+Agecol<-df$AGe
+sd<-df[df$Age>18,]
+cat("Age column")
+print(Agecol)
+print(sd)
+
